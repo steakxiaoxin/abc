@@ -1,10 +1,9 @@
-const koa = require("koa");
-const app = new koa();
+const Koa = require('koa')
+const InitApp = require('./core/init')
 
-app.use(async (ctx, next) => {
-  ctx.body = 1;
-  await next();
-});
+const app = new Koa()
 
-app.listen(3001);
-console.log("app is run on http://localhost:3001");
+InitApp.initCore(app)
+
+app.listen(3000)
+console.log('app is run on http://localhost:3000')
