@@ -1,0 +1,55 @@
+{
+  "name": "abc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:steakxiaoxin/abc.git",
+  "author": "xiaoxin <steak_xiaoxin@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "server": "cross-env NODE_ENV=dev nodemon ./server/app.js",
+    "start": "yarn server & yarn dev"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "koa": "^2.11.0",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^7.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "nodemon": "^2.0.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
