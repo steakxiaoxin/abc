@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
 
@@ -8,16 +7,11 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-    },
+    // {
+    //   path: '/',
+    //   name: 'home',
+    //   component: Home,
+    // },
     {
       path: '/login',
       name: 'login',
@@ -27,6 +21,16 @@ export default new Router({
       path: '/list',
       name: 'list',
       component: () => import(/* webpackChunkName: "list" */ './views/List.vue'),
+    },
+    {
+      path: '/add',
+      name: 'add',
+      component: () => import(/* webpackChunkName: "add" */ './views/Add.vue'),
+    },
+    {
+      path: '/edit/:id',
+      name: 'edit',
+      component: () => import(/* webpackChunkName: "edit" */ './views/Edit.vue'),
     },
   ],
 })
