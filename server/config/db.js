@@ -9,11 +9,11 @@ const MYSQL_CONF = {
     database: 'myblog',
   },
   production: {
-    host: 'localhost',
+    host: '47.102.132.207',
     user: 'root',
     password: '12345678',
     port: '3306',
-    database: 'myblog',
+    database: 'bixin',
   },
 }[env]
 
