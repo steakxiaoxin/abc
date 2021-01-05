@@ -14,7 +14,7 @@
     "format": "prettier --write \"server/**/*.js\" \"src/**/*.js\" \"src/**/*.vue\""
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "dayjs": "^1.8.19",
     "element-ui": "^2.13.0",
